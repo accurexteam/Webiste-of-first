@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Technotex - Contact Us</title>
+    <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,aspect-ratio"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0689f4",
+                        "background-light": "#f5f7f8",
+                        "background-dark": "#0f1a23",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet" />
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+
+    <header class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+        <div class="container mx-auto px-4">
+            <div class="flex h-20 items-center justify-between">
+                <a class="flex items-center gap-3" href="#">
+                    <svg class="h-6 w-6 text-primary" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24 45.8096C19.6865 45.8096 15.4698 44.5305 11.8832 42.134C8.29667 39.7376 5.50128 36.3314 3.85056 32.3462C2.19985 28.361 1.76794 23.9758 2.60947 19.7452C3.451 15.5145 5.52816 11.6284 8.57829 8.5783C11.6284 5.52817 15.5145 3.45101 19.7452 2.60948C23.9758 1.76795 28.361 2.19986 32.3462 3.85057C36.3314 5.50129 39.7376 8.29668 42.134 11.8833C44.5305 15.4698 45.8096 19.6865 45.8096 24L24 24L24 45.8096Z" fill="currentColor"></path>
+                    </svg>
+                    <span class="text-xl font-bold tracking-tighter">Technotex</span>
+                </a>
+                <nav class="hidden items-center gap-8 md:flex">
+                    <a class="text-sm font-medium hover:text-primary transition-colors" href="#">Products</a>
+                    <a class="text-sm font-medium hover:text-primary transition-colors" href="#">Applications</a>
+                    <a class="text-sm font-medium hover:text-primary transition-colors" href="#">Resources</a>
+                    <a class="text-sm font-bold text-primary" href="#">About Us</a>
+                    <a class="text-sm font-medium hover:text-primary transition-colors" href="#">Contact</a>
+                </nav>
+                <button class="hidden min-w-[120px] items-center justify-center rounded-full h-10 px-6 bg-primary text-white text-sm font-bold shadow-lg transition-transform hover:scale-105 md:flex">
+                    Request a Quote
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <div class="container mx-auto px-6 py-16 lg:py-24">
+            <div class="grid lg:grid-cols-2 gap-16 lg:gap-24 items-start">
+                <div class="space-y-12">
+                    <div>
+                        <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4">Get in Touch</h2>
+                        <p class="text-lg text-gray-600 dark:text-gray-400">We're here to help and answer any question you might have. We look forward to hearing from you.</p>
+                    </div>
+                    <form class="space-y-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2" for="name">Name</label>
+                            <input class="form-input w-full bg-background-light dark:bg-background-dark border-gray-300 dark:border-gray-700 focus:ring-primary focus:border-primary rounded-xl transition" id="name" name="name" placeholder="Your Name" type="text" />
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2" for="email">Email</label>
+                             <input class="form-input w-full bg-background-light dark:bg-background-dark border-gray-300 dark:border-gray-700 focus:ring-primary focus:border-primary rounded-xl transition" id="email" name="email" placeholder="you@example.com" type="email" />
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2" for="subject">Subject</label>
+                             <input class="form-input w-full bg-background-light dark:bg-background-dark border-gray-300 dark:border-gray-700 focus:ring-primary focus:border-primary rounded-xl transition" id="subject" name="subject" placeholder="What is your question about?" type="text" />
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2" for="message">Message</label>
+                            <textarea class="form-textarea w-full bg-background-light dark:bg-background-dark border-gray-300 dark:border-gray-700 focus:ring-primary focus:border-primary rounded-xl transition resize-none min-h-[120px]" id="message" name="message" placeholder="Your message..."></textarea>
+                        </div>
+                        <div>
+                            <button class="w-full bg-primary text-white font-bold py-3 px-6 rounded-xl hover:bg-primary/90 transition-all duration-300 transform hover:scale-105" type="submit">
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="space-y-12">
+                    <div>
+                        <div class="w-full aspect-w-16 aspect-h-9 bg-center bg-no-repeat bg-cover rounded-xl" style='background-image: url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2070&auto=format&fit=crop");'></div>
+                    </div>
+                    <div class="space-y-8">
+                        <div class="flex items-start gap-4">
+                            <div class="flex-shrink-0 w-10 h-10 bg-primary/20 dark:bg-primary/30 rounded-lg flex items-center justify-center text-primary">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-lg text-gray-900 dark:text-white">Address</h3>
+                                <p class="text-gray-600 dark:text-gray-400">123 Innovation Drive, Techville, CA 91234</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="flex-shrink-0 w-10 h-10 bg-primary/20 dark:bg-primary/30 rounded-lg flex items-center justify-center text-primary">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-lg text-gray-900 dark:text-white">Phone</h3>
+                                <p class="text-gray-600 dark:text-gray-400">+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="flex-shrink-0 w-10 h-10 bg-primary/20 dark:bg-primary/30 rounded-lg flex items-center justify-center text-primary">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-lg text-gray-900 dark:text-white">Email</h3>
+                                <p class="text-gray-600 dark:text-gray-400">info@technotex.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-background-light dark:bg-background-dark border-t border-gray-200 dark:border-gray-800">
+        <div class="container mx-auto px-6 py-8">
+            <div class="flex flex-col items-center justify-between space-y-4 md:flex-row md:space-y-0">
+                <p class="text-sm text-gray-500 dark:text-gray-400">© 2024 Technotex. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a class="text-sm text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors" href="#">Privacy Policy</a>
+                    <a class="text-sm text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors" href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const textarea = document.getElementById('message');
+
+            function autoResize() {
+                // Reset height to allow shrinking
+                textarea.style.height = 'auto';
+                // Set height to the full scroll height of the content
+                textarea.style.height = textarea.scrollHeight + 'px';
+            }
+
+            // Adjust size on input
+            textarea.addEventListener('input', autoResize);
+
+            // Optional: Adjust size on page load in case of pre-filled content
+            // autoResize(); 
+        });
+    </script>
+</body>
+</html>
